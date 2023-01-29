@@ -1,0 +1,12 @@
+spring.jpa:
+  database: POSTGRESQL
+  hibernate:
+    ddl-auto: none
+  show-sql: false
+
+spring.datasource:
+  platform: postgres
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/reactive-db
+  username: reactive-db
+  password: reactive-db
