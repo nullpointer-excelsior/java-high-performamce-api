@@ -21,7 +21,7 @@ public class ProductService {
     @Transactional
     public Stream<Product> getStream() {
         return StreamPaginated
-                .paginate(20000)
+                .paginate(10000)
                 .map(page -> this.repository.findByPaginated(page.getLimit(), page.getOffset()))
                 .takeWhile(records -> !records.isEmpty())
                 .flatMap(Collection::stream);
