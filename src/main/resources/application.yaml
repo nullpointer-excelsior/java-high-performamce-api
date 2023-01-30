@@ -7,6 +7,6 @@ spring.jpa:
 spring.datasource:
   platform: postgres
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/reactive-db
-  username: reactive-db
-  password: reactive-db
+  url: jdbc:postgresql://localhost:5432/streamdata
+  username: streamdata
+  password: streamdata

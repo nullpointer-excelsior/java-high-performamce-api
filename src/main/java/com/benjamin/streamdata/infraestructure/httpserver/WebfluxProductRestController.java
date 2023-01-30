@@ -7,12 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("product")
-public class WebProductRestController {
+@RequestMapping("webflux/product")
+public class WebfluxProductRestController {
 
     @Autowired
     private ProductUseCases product;
@@ -30,8 +31,9 @@ public class WebProductRestController {
     }
 
     @GetMapping("no-stock")
-    public List<Product> getProductsWithoutStock() {
-        return product.getSkuWithoutStock().toList();
+    public Flux<Product> getProductsWithoutStock() {
+
+        return Flux.fromStream(product.getSkuWithoutStock());
     }
 
     @GetMapping("count")
