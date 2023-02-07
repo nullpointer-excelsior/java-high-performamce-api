@@ -9,4 +9,5 @@ public interface ProductRepository {
     List<Product> findByPaginated(int limit, int offset);
 
     List<Product> findAll();
+
 }

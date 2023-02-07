@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 
 @Log4j2
 @Service
-public class ProductUseCases {
+public class StreamProductUseCases {
 
     @Autowired
     private ProductService products;

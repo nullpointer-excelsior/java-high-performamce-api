@@ -15,4 +15,5 @@ public class Product {
     private Integer stock;
     private String department;
     private String brand;
+
 }

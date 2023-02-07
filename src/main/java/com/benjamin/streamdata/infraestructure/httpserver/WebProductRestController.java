@@ -1,6 +1,6 @@
 package com.benjamin.streamdata.infraestructure.httpserver;
 
-import com.benjamin.streamdata.core.application.ProductUseCases;
+import com.benjamin.streamdata.core.application.StreamProductUseCases;
 import com.benjamin.streamdata.core.domain.interfaces.ProductRepository;
 import com.benjamin.streamdata.core.domain.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import java.util.List;
 public class WebProductRestController {
 
     @Autowired
-    private ProductUseCases product;
+    private StreamProductUseCases product;
     @Autowired
     private ProductRepository repository;
 
