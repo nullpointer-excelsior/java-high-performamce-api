@@ -1,6 +1,5 @@
 package com.benjamin.streamdata.infraestructure.persistence.entities;
 
-import com.benjamin.streamdata.core.domain.model.Product;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -34,14 +33,4 @@ public class ProductEntity {
     @Column(name = "brand")
     private String brand;
 
-    public static Product mapToDomainEntity(ProductEntity entity) {
-        return Product.builder()
-                .sku(entity.getSku())
-                .stock(entity.getStock())
-                .brand(entity.getBrand())
-                .department(entity.getDepartment())
-                .name(entity.getName())
-                .price(entity.getPrice())
-                .build();
-    }
 }
