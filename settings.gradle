@@ -1,1 +1,4 @@
 rootProject.name = 'java-high-performance-api'
+
+include 'apps:api-stream'
+include 'libs:domain'

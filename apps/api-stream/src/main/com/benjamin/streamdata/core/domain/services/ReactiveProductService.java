@@ -3,7 +3,6 @@ package com.benjamin.streamdata.core.domain.services;
 import com.benjamin.streamdata.core.domain.interfaces.ProductRepository;
 import com.benjamin.streamdata.core.domain.interfaces.ReactiveProductRepository;
 import com.benjamin.streamdata.core.domain.libs.FluxPaginated;
-import com.benjamin.streamdata.core.domain.libs.StreamPaginated;
 import com.benjamin.streamdata.core.domain.model.Product;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
