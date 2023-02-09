@@ -1,8 +1,8 @@
 rootProject.name = 'java-high-performance-api'
 // applications
-include 'apps:api-stream'
+include 'apps:api-webflux'
 include 'apps:api-reactive'
 include 'apps:api-blocking'
+include 'apps:client-reactive'
 // libraries
 include 'libs:products'
-

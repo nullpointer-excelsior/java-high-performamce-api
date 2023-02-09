@@ -1,6 +1,5 @@
 package com.benjamin.blocking;
 
-import com.benjamin.products.application.ProductUseCases;
 import com.benjamin.products.domain.Product;
 import com.benjamin.products.domain.interfaces.ProductRepository;
 import com.benjamin.products.infrastructure.spring.ProductConfiguration;
@@ -23,8 +22,6 @@ import java.util.stream.Stream;
 @Import(ProductConfiguration.class)
 public class WebApplication {
 
-    @Autowired
-    private ProductUseCases products;
     @Autowired
     private ProductRepository repository;
 
