@@ -31,6 +31,9 @@ Podemos hace uso del archivo Makefile
 ```bash
 #!/bin/bash
 
+# create database with docker
+make up-database
+
 # run webflux server example on port 8080 
 make up-webflux-api # ./gradlew apps:api-webflux:bootRun
 

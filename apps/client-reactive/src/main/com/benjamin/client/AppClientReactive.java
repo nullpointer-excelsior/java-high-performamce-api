@@ -1,8 +1,5 @@
 package com.benjamin.client;
 
-import com.benjamin.client.model.Product;
-import com.benjamin.client.services.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -11,10 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Flux;
-import reactor.util.retry.Retry;
-
-import java.time.Duration;
 
 
 @Component
@@ -22,8 +15,6 @@ import java.time.Duration;
 @SpringBootApplication
 public class AppClientReactive {
 
-    @Autowired
-    ProductService productService;
 
     public static void main(String[] args) {
         SpringApplication.run(AppClientReactive.class, args);

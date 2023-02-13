@@ -20,6 +20,7 @@ public class ProductService {
 
     public Flux<String> getBrands() {
         return api.getProducts()
+                .filter(product -> product.getBrand() != null)
                 .map(Product::getBrand)
                 .distinct();
     }
