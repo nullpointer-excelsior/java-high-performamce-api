@@ -46,9 +46,4 @@ subprojects {
         useJUnitPlatform()
     }
 
-    task hello {
-        doLast { task ->
-            println "I'm $task.project.name"
-        }
-    }
 }
